@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>SOAP JavaScript Client Test</title>
+    <script type="text/javascript">
+        function soap() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('POST', 'http://nhs.uk/ExternalServices/Tools/WebService/GenericToolsService.asmx?wsdl', true);
+
+            // build SOAP request
+            var sr ='<![CDATA[<SecurityId>QYIPKUBP</SecurityId><TemplateId>11</TemplateId><TemplateContextItems><ArrayOfString><string>units</string><string>8</string></ArrayOfString><ArrayOfString><string>calories</string><string>9</string></ArrayOfString><ArrayOfString><string>cost</string><string>£29</string></ArrayOfString><ArrayOfString><string>message_1</string><string>$message_1</string></ArrayOfString><ArrayOfString><string>message_2</string><string>$message_2</string></ArrayOfString><ArrayOfString><string>message_3</string><string>$message_3</string></ArrayOfString><ArrayOfString><string>message_4</string><string>$message_4</string></ArrayOfString><ArrayOfString><string>message_5</string><string>$message_5</string></ArrayOfString><ArrayOfString><string>bullet_1_a</string><string>$bullet_1_a</string></ArrayOfString><ArrayOfString><string>bullet_1_b</string><string>$bullet_1_b</string></ArrayOfString><ArrayOfString><string>bullet_1_c</string><string>$bullet_1_c</string></ArrayOfString><ArrayOfString><string>bullet_1_d</string><string>$bullet_1_d</string></ArrayOfString><ArrayOfString><string>bullet_2_a</string><string>$bullet_2_a</string></ArrayOfString><ArrayOfString><string>bullet_2_b</string><string>$bullet_2_b</string></ArrayOfString><ArrayOfString><string>bullet_2_c</string><string>$bullet_2_c</string></ArrayOfString><ArrayOfString><string>bullet_2_d</string><string>$bullet_2_d</string></ArrayOfString></TemplateContextItems><Recipient>design@lukesnowdon.co.uk</Recipient>]]>';
+
+            xmlhttp.onreadystatechange = function () {
+				
+                if (xmlhttp.readyState == 4) {
+					console.log(xmlhttp)
+                    if (xmlhttp.status == 200) {
+
+                        alert('done use firebug to see response');
+                    }
+                }
+            }
+            // Send the POST request
+            xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+            xmlhttp.send(sr);
+            // send request
+            // ...
+        }
+    </script>
+</head>
+<body>
+    <form name="Demo" action="" method="post">
+        <div>
+            <input type="button" value="Soap" onclick="soap();" />
+        </div>
+    </form>
+</body>
+<html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Change4life drinks checker</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" id="mvp" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/stylish-select.css" />
+<link href="css/c4l_dc_main.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/c4l_dc_ie.css">
+<![endif]-->
+<!--[if IE 10]>
+	<link rel="stylesheet" type="text/css" href="css/c4l_dc_ie10.css">
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/c4l_dc_ie7.css">
+<![endif]-->
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.touchswipe.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/jquery.json-2.4.min.js"></script>
+
+<script type="text/javascript" src="js/jpreloader.js"></script>
+<script type="text/javascript" src="package.php"></script>
+</head>
+<body>
+
+<div  id = "test" ></div>
+<div class = "picker" id = "test_picker_h" ></div>
+<div class = "picker" id = "test_picker_v" ></div>
+<script language="JavaScript" type="text/javascript">
+if (typeof console == "undefined" || typeof console.log == "undefined") var console = { log: function() {} }; 
+var __vc
+var tmp_h,tmp_v
+var __data = null
+var __img_path = ""
+$(document).ready(function(){
+	
+	tmp_h = new picker(__vc,$('#test_picker_h'),{'aspect':'h','width':300,'height':80,'series':[2,2.5,3,3.5,4,4.5,5,5.5,6,6.5],'emphasis':5,'selected':6});
+	tmp_v = new picker(__vc,$('#test_picker_v'),{'aspect':'v','width':80,'height':80,'series':[2,2.5,3,3.5,4,4.5,5,5.5,6,6.5],'emphasis':5,'selected':3});
+	
+	
+      //Enable swiping...
+      
+    
+})
+</script>
+</body>
+</html>

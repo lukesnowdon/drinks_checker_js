@@ -1,0 +1,577 @@
+
+
+
+<!DOCTYPE>
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Meal mixer - recipe finder and menu planner | Change4Life
+</title><link rel="shortcut icon" href="http://nhs.uk/Change4Life/PublishingImages/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="stylesheet" type="text/css" href="http://nhs.uk/_layouts/1033/styles/core.css?rev=5msmprmeONfN6lJ3wtbAlA%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/normalise.css" /><link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/layout.css" /><link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/type.css" /><link rel="stylesheet" type="text/css" media="screen" href="http://nhs.uk/change4life/css/responsive-tables.css" /><link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/subnav.css" /><link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/content.css" />
+	<script type="text/javascript" src="http://nhs.uk/Change4Life/scripts/jquery.js"></script>
+	<script type="text/javascript" src="http://nhs.uk/Change4Life/scripts/jquery.swfobject.js"></script>
+	<script type="text/javascript" src="http://nhs.uk/Change4Life/scripts/initialise.js"></script>
+    <script type="text/javascript" src="http://nhs.uk/Change4Life/scripts/concertina.js"></script>
+    <script type="text/javascript" src="http://nhs.uk/Change4Life/scripts/responsive-tables.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+
+            $('.mobile-subnav').click(function (e) {
+                e.preventDefault();
+                $(".subnav-container").toggleClass('shown');
+                $(this).toggleClass('show-subnav');
+            });
+
+            var page = $("form#aspnetForm").attr("action");
+            n = page.lastIndexOf('/');
+            if (n >= 0)
+                page = page.substring(n + 1);
+
+            if (page.indexOf('?') != -1)
+                page = page.substring(0, page.indexOf('?'));
+
+            if (page.indexOf('#') != -1)
+                page = page.substring(0, page.indexOf('#'));
+
+            $("#secondaryNavigation a").each(function () {
+
+                href = $(this).attr("href");
+                s = href.lastIndexOf('/');
+                if (s >= 0)
+                    href = href.substring(s + 1);
+
+                if (href.indexOf('?') != -1)
+                    href = href.substring(0, href.indexOf('?'));
+
+                if (href.indexOf('#') != -1)
+                    href = href.substring(0, href.indexOf('#'));
+
+                if (href == page) {
+                    $(this).parents("#secondaryNavigation li").addClass("active");
+                }
+            });
+        })
+
+        $(function () {
+            var btn = $('.mobile-nav');
+            menu = $('.nav');
+            menuHeight = menu.height();
+
+            $(btn).live('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 741 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+            
+        //]]>
+    </script>
+	
+	<link rel="stylesheet" media="print" type="text/css" href="http://nhs.uk/change4life/Style Library/print.css" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="http://nhs.uk/change4life/Style%20Library/ie7.css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="http://nhs.uk/change4life/Style%20Library/ie8.css" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="http://nhs.uk/change4life/Style%20Library/ie9.css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="/includes/swfobject.js"></script>
+	<meta name="WT.sv" content="*" /><meta name="WT.cg_n" content="Change4Life" /><meta name="WT.cg_s" content="healthierrecipes" /><meta name="DCSext.RealUrl" content="/change4life/Pages/meal-planner-recipe-finder.aspx"></meta>
+<meta name="WT.cg_n" content="change4life"></meta>
+<meta name="DCSext.Server" content="NHC10WEB14PRP"></meta>
+<meta name="WT.sv" content="NHC10WEB14PRP"></meta>
+<!-- Webtrends Javascript tag -->
+<script type="text/javascript" src="/includes/sdc.js"></script>
+<script type="text/javascript" src="/includes/jquery.webtrendslinkstracking.js"></script>
+<script type="text/javascript">try{var _tag=new WebTrends();_tag.dcsGetId();}catch(e){}</script>
+<script type="text/javascript">try{_tag.dcsCollect();}catch(e){}</script>
+
+    <link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/3col.css" />
+<link rel="stylesheet" type="text/css" href="http://nhs.uk/change4life/css/overrides.css" /><style type="text/css">
+	.ctl00_PlaceHolderMain_ContentHeaderWebPartZone_0 { border-color:Black;border-width:1px;border-style:Solid; }
+	.ctl00_PlaceHolderMain_Container1WebPartZone_0 { border-color:Black;border-width:1px;border-style:Solid; }
+	.ctl00_PlaceHolderMain_SupplementaryContentWebPartZone_0 { border-color:Black;border-width:1px;border-style:Solid; }
+	.ctl00_PlaceHolderMain_Container2WebPartZone_0 { border-color:Black;border-width:1px;border-style:Solid; }
+
+</style></head>
+  
+<body onLoad="javascript:_spBodyOnLoadWrapper();" class="healthierrecipes">
+    
+
+    <form method="post" action="meal-planner-recipe-finder.aspx" onSubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__SPSCEditMenu" id="__SPSCEditMenu" value="true" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0xF9BF3AFFF26BFE02879549320641E3E43AC9C14541CB885B112A67DE65908802EF8398DF16A163DBBBF086DF314FECF8712F60C3E48AD762BAC989D888A89579,13 Dec 2013 15:36:59 -0000" />
+<input type="hidden" name="MSOAuthoringConsole_FormContext" id="MSOAuthoringConsole_FormContext" value="" />
+<input type="hidden" name="MSOAC_EditDuringWorkflow" id="MSOAC_EditDuringWorkflow" value="" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMBBkZBYCZg9kFggCAw9kFgQCAw9kFgJmD2QWAmYPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAhcPZBYCAgEPFgIfAAsrBAFkAgUPFgIfAAsrBAFkAgkPZBYKAgIPZBYGAgEPZBYCAgIPDxYCHgdWaXNpYmxlZxYCHgVzdHlsZQUOZGlzcGxheTpibG9jaztkAgMPZBYCAgEPFgIfAWgWAmYPZBYEAgIPZBYCAgMPFgIfAWhkAgMPDxYCHglBY2Nlc3NLZXkFAS9kZAIFD2QWAmYPDxYCHwFoZBYEAgEPDxYCHwFoZGQCAw8PFgIfAWhkFgICAQ8PFgIfAWdkFgQCAQ8PFgIfAWhkFhwCAQ8PFgIfAWhkZAIDDxYCHwFoZAIFDw8WAh8BaGRkAgcPFgIfAWhkAgkPDxYCHwFoZGQCCw8PFgIfAWhkZAINDw8WAh8BaGRkAg8PDxYEHgdFbmFibGVkaB8BaGRkAhEPDxYCHwFoZGQCEw8PFgQfBGgfAWhkZAIVDw8WAh8BaGRkAhcPFgIfAWhkAhkPFgIfAWhkAhsPDxYCHwFnZGQCAw8PFgIfAWdkFgYCAQ8PFgIfAWdkZAIDDw8WAh8BZ2RkAgUPDxYCHwFnZGQCCg8WAh8ACysEAWQCDA8WAh8ACysEAWQCDg8WAh8ACysEAWQCEA9kFgoCARBkZBYCZg8PFgIfAWhkZAIDEGRkFgJmDw8WAh8BaGRkAgUQFgIfAAsrBAFkZAIHEGRkFgJmDw8WAh8BaGRkAgkQZGQWAmYPDxYCHwFoZGQCDQ9kFgICARAWAh8ACysEAWRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBR1jdGwwMCRjb250ZW50c2VhcmNoJFNlYXJjaEltZ01TiLKwXN7wfhgc1L//qNwQAqQG" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript"> var MSOWebPartPageFormName = 'aspnetForm';</script><script type="text/javascript" language="javascript" src="/_layouts/1033/init.js?rev=w7H9f6YxfzEXRgXKUMfiTg%3D%3D"></script>
+<script type="text/javascript" language="javascript" src="/_layouts/1033/init.js?rev=w7H9f6YxfzEXRgXKUMfiTg%3D%3D"></script><script type="text/javascript" language="javascript" src="/_layouts/1033/core.js?rev=CNBZRdV1h3pKuA7LsMXf3w%3D%3D"></script><script type="text/JavaScript" >
+<!--
+var L_Menu_BaseUrl="/change4life";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="";
+//-->
+</script><script type="text/javascript" language="javascript" src="/_layouts/1033/non_ie.js?rev=yfNry4hY0Gwa%2FPDNGrqXVg%3D%3D"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+UpdateFormDigest('\u002fchange4life', 1440000);return _spFormOnSubmitWrapper();
+return true;
+}
+//]]>
+</script>
+
+  		
+        
+
+        <ul id="accessMenu" class="hiddenElement">
+	        <li><a href="#primaryNavigation" accesskey="m">Go to main menu</a></li>
+            <li><a href="#pageContentContainer" accesskey="s">Go to content</a></li>
+            <li><a href="http://nhs.uk/Change4Life/" accesskey="1">Go to homepage</a></li>
+            <li><a href="http://nhs.uk/Change4Life/Pages/sitemap.aspx" accesskey="3">Go to sitemap</a></li>
+	        <li><a href="http://nhs.uk/Change4Life/Pages/terms-and-conditions.aspx" accesskey="8">Go to terms and conditions</a></li>
+	        <li><a href="http://nhs.uk/Change4Life/Pages/accessibility-statement.aspx" accesskey="0">Go to accessibility statement</a></li>
+        </ul>
+
+        <div id="pageContainer" class="jsOff page-wrapper">
+    
+            <div class="header">
+                
+	<div class="login-wrap kids-parents">
+	<div>
+	<div class="login-tab">
+		<p><a href="https://registration.change4life.co.uk/">Join Change4Life for free</a></p>
+		<span class="crnr bl"></span>
+		<span class="crnr br"></span>
+	</div>
+</div>
+</div>
+
+				<div id="login-wrap" class="login-wrap"></div>				
+                <div class="logo"><a href="http://nhs.uk/change4life/"><img src="http://nhs.uk/Change4Life/PublishingImages/change4LifeLogo.gif" alt="Change 4 Life logo" /></a></div>
+                <div class="strapline"><img src="http://nhs.uk/Change4Life/PublishingImages/eatWellMoveMoreLiveLongerStrapline.gif" alt="Eat well, Move more, Live longer" /></div>
+                <div class="mobile-nav"><span class="mobile-menu">MENU</span> <a href="#mobile-nav"><span class="mobile-bar"></span><span class="mobile-bar"></span><span class="mobile-bar"></span></a></div>
+                <div class="search-bar search-wrap">
+                    <div id="ctl00_contentsearch">
+	<div class="search search-bar search-bar-input"><span class="caption">Search: </span><input name="ctl00$contentsearch$ctl00" type="text" value="Enter search term" /><input type="image" name="ctl00$contentsearch$SearchImg" id="ctl00_contentsearch_SearchImg" src="http://nhs.uk/Change4Life/PublishingImages/search-button.gif" style="border-width:0px;" /><input name="ctl00$contentsearch$ctl01" type="text" class="hidden" /><span></span></div>
+</div>
+                </div>
+            </div>
+
+            <div class="page-content-wrapper">
+            
+                <div id="primaryNavigation" class="nav">
+                    <ul>
+                        <li class="nav-item whyChangeLink"><a href="http://nhs.uk/Change4Life/Pages/why-change-for-life.aspx">About Change4Life</a></li>
+			            <li class="nav-item healthierRecipesLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-eating.aspx">Eat well</a></li>
+			            <li class="nav-item activityLink"><a href="http://nhs.uk/Change4Life/Pages/be-more-active.aspx">Get going</a></li>
+                        <li class="nav-item alcoholLink"><a href="http://nhs.uk/Change4Life/Pages/drink-less-alcohol.aspx">Choose less booze</a></li>
+                        <li class="nav-item myLocalAreaLink"><a href="http://nhs.uk/Change4Life/Pages/local-change-for-life-activities.aspx">Find local activities</a></li>
+                        <li class="nav-item partnersLink"><a href="http://nhs.uk/Change4Life/Pages/partners-supporters.aspx">Local supporters</a></li>
+                        <!-- <li class="nav-item nav-item-last getgoingLink"><a href="http://nhs.uk/Change4Life/Pages/get-going.aspx">Get going</a></li> -->
+                        <li class="nav-item nav-item-last couch5kLink"><a href="http://nhs.uk/Change4Life/Pages/couch-to-5k.aspx">Couch to 5k</a></li>
+                    </ul>
+                </div>
+	
+                <div id="pageContentContainer" class="cookingmealideas_none_none page-content clearfix">
+		            
+
+<div id="ContentHeaderWebPartZone" class="WebPartZone-Vertical">
+
+		</div>
+	
+        
+        <div id="container1" class="subnav-container">
+            <a class="mobile-subnav" href="#mobile-subnav"></a>
+  			<div id="Container1WebPartZone" class="subnav">
+
+				<div id="ctl00_SPWebPartManager1_g_2d501933_4f5c_410a_a6ca_8522d178e2c6">
+					<div><ul id="secondaryNavigation"> 
+<li class="shoppingtipsLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-food-shopping-tips.aspx">Shopping tips</a>
+<ul>
+<li class="foodlabelsLink"><a href="http://nhs.uk/Change4Life/Pages/food-labels.aspx">Understanding food labels</a></li>
+</ul>
+</li> 
+<li class="cookingmealideasLink"><a href="http://nhs.uk/Change4Life/Pages/meal-planner-recipe-finder.aspx">Cooking & meal ideas</a>
+<ul>
+<li class="mealmixerappLink"><a href="http://nhs.uk/Change4Life/Pages/meal-planner-recipe-finder-app.aspx">Meal mixer app</a></li>
+<li class="kidscookbookLink"><a href="http://nhs.uk/Change4Life/Pages/make-cookbook.aspx">Kids cookbook</a></li>
+<li class="mealplanningtipsLink"><a href="http://nhs.uk/Change4Life/Pages/meal-planning-tips.aspx">Meal planning tips</a></li>
+<li class="cookingtipsLink"><a href="http://nhs.uk/Change4Life/Pages/cooking-tips.aspx">Cooking tips</a></li>
+<li class="cookingtermsLink"><a href="http://nhs.uk/Change4Life/Pages/cooking-terms.aspx">Cooking terms</a></li>
+</ul>
+</li> 
+<li class="breakfastLink"><a href="http://nhs.uk/Change4Life/Pages/breakfast-for-life.aspx">Breakfast</a>
+<ul>
+<li class="whatsforbreakfastgameLink"><a href="http://nhs.uk/Change4Life/Pages/breakfast-game-toast-toppings.aspx">What's for breakfast? game</a></li>
+</ul>
+</li> 
+<li class="lunchLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-lunchbox-picnic.aspx">Lunches & picnics</a></li>
+<li class="snacksLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-snacks.aspx">Snacks</a>
+<ul>
+<li class="healthysnacksLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-snacks-for-kids.aspx">Healthier snacks for kids</a></li>
+</ul>
+</li>
+<li class="sugarswapsLink"><a href="http://nhs.uk/Change4Life/Pages/low-sugar-healthy-snacks.aspx">Sugar swaps</a>
+<ul>
+<li class="swapsugarshopLink"><a href="http://nhs.uk/Change4Life/Pages/cut-down-on-sugar-when-you-shop.aspx">Swap sugar when you shop</a></li>
+<li class="dailytipsLink"><a href="http://nhs.uk/Change4Life/Pages/sugar-swap-ideas.aspx">Daily tips to reduce sugar</a></li>
+</ul>
+</li> 
+<li class="cutbackonfatLink"><a href="http://nhs.uk/Change4Life/Pages/cut-back-on-fat.aspx">Cut back on fat</a>
+<ul>
+<li class="fatfactsLink"><a href="http://nhs.uk/Change4Life/Pages/facts-about-fat.aspx">Fat facts</a></li>
+<li class="fatswapLink"><a href="http://nhs.uk/Change4Life/Pages/cut-down-on-fat-when-you-shop.aspx">Cut back fat when you shop</a></li>
+</ul>
+</li>
+<li class="fiveadayLink"><a href="http://nhs.uk/Change4Life/Pages/five-a-day.aspx">5 A DAY</a>
+<ul>
+<li class="everydayLink"><a href="http://nhs.uk/Change4Life/Pages/five-a-day-every-day.aspx">5 A DAY, every day</a></li>
+<li class="whatcountsLink"><a href="http://nhs.uk/Change4Life/Pages/what-counts-as-five-a-day.aspx">What counts as 5 A DAY?</a></li>
+<li class="portionsizesLink"><a href="http://nhs.uk/Change4Life/Pages/five-a-day-portion-sizes.aspx">5 A DAY portion sizes</a></li>
+</ul>
+</li>
+<li class="watchsaltLink"><a href="http://nhs.uk/Change4Life/Pages/avoid-salty-foods.aspx">Watch the salt</a>
+<ul>
+<li class="highsaltfoodsLink"><a href="http://nhs.uk/Change4Life/Pages/high-salt-foods.aspx">High salt foods</a></li>
+<li class="salttipsLink"><a href="http://nhs.uk/Change4Life/Pages/reducing-salt-tips.aspx">Salt tips</a></li>
+</ul>
+</li>
+<li class="healthyeatingtipsLink"><a href="http://nhs.uk/Change4Life/Pages/healthy-eating-tips.aspx">Healthy eating tips</a>
+<ul>
+<li class="eatingoutLink"><a href="http://nhs.uk/Change4Life/Pages/restaurant-takeaway-healthy-options.aspx">Eating out & takeaways</a></li>
+<li class="caloriesLink"><a href="http://nhs.uk/Change4Life/Pages/calories.aspx">Calories</a></li>
+</ul>
+</li>
+<li class="befoodsmartLink"><a href="http://nhs.uk/change4life/pages/be-food-smart.aspx">Be Food Smart</a>
+<ul>
+<li class="bfsroadshowLink"><a href="http://nhs.uk/change4life/Pages/be-food-smart-roadshow-dates.aspx">Roadshow dates</a></li>
+</ul>
+</li>
+</ul></div>
+				</div>
+				</div>
+			
+        </div>
+			
+		<div id="primaryContent" class="centre-col">
+			<div class="centre-content">
+                <h1>For cooking and meal ideas - try the Meal Mixer!</h1>
+<p>If you're stuck for some healthier meal ideas and need some help getting started, our Meal Mixer can help! Most recipes feed four adults and can be made on a budget. </p>
+<p>Use it to choose meal combinations - it will even create a shopping list for you! Or if you just want ideas for a meal today, click on the recipe finder instead - you can browse by meal type or search by ingredient. </p>
+
+                <div id="SupplementaryContentWebPartZone" class="WebPartZone-Vertical">
+
+						
+ </div>
+<div id="toolReviewDates">
+<p>Media last reviewed: </p><p>Next review due: </p></div>
+</div>
+
+						</div>
+							<!--<div id="mealmixerBreakoutBoxLarge" class="breakoutBox19"><span class="divTop"></span>
+<h2>Win a George Foreman grill!</h2>
+<p>We’d like your feedback on the Be Food Smart online meal mixer and recipe finder!<br />
+If you live in England and have searched for a recipe or created a meal plan, complete our short survey and you could win one of three George Foreman heritage family grills.<br /> 
+<a href="http://ts.ktrmr.com/surveyq.aspx?i.project=UKL115049A02&s=BMR15&id=1&chk=na&pid=auto" shape="rect">Tell us what you think
+</a></p>
+<span class="divBottom"></span></div>
+
+<div id="mealmixerBreakoutBox" class="breakoutBox30"><span class="divTop"></span>
+<div class="mealmixer">
+<h2>Free meal mixer app</h2>
+<p>Find recipes and main meals at home or in the supermarket with our smartphone app</p>
+<a href="http://nhs.uk/change4life/pages/meal-planner-recipe-finder-app.aspx" class="btnGreen">Download the app</a> 
+</div>
+<div class="mealmixerimage"><img src="http://nhs.uk/Change4Life/publishingimages/befoodsmart/meal-mixer-app.gif" /></div>
+<span class="divBottom"></span></div>-->
+							</div>
+						
+            </div>
+        </div>
+
+        <div id="container2" class="right-col">
+	 		 <div id="Container2WebPartZone" class="WebPartZone-Vertical">
+
+								</div>
+							
+        </div>
+
+
+		
+		
+	            </div>
+            
+            </div>
+        
+            <footer id="footer" class="page-footer">
+                <span class="divTop flash-footer"></span>
+                <ul class="page-footer-nav">
+                    <li><a href="http://nhs.uk/Change4Life/Pages/terms-and-conditions.aspx">Terms &amp; conditions</a></li>
+                    <li><a href="http://nhs.uk/Change4Life/Pages/privacy-policy.aspx">Privacy policy</a></li>
+                    <li><a href="http://nhs.uk/Change4Life/Pages/sitemap.aspx">Sitemap</a></li>
+                    <li><a href="http://nhs.uk/Change4Life/Pages/accessibility-statement.aspx">Accessibility statement</a></li>
+                    <li><a href="http://nhs.uk/Change4Life/Pages/copyright-statement.aspx">Crown Copyright 2013</a></li>
+                    <li class="lastItem"><a href="http://nhs.uk/Change4Life/Pages/contact-us.aspx">Contact us</a></li>
+                </ul>
+                <span class="divBottom"></span>
+            </footer>
+        
+        </div>
+    
+							
+<script type="text/javascript">
+//<![CDATA[
+var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';//]]>
+</script>
+</form>
+	
+    <noscript>
+	    <div><img style="border: 0; width: 1px; height: 1px;" alt="WebTrends pixel used for site analytics only" src="http://statse.webtrendslive.com/S142201/button6.asp?tagver=6&amp;si=142201&amp;fw=1&amp;js=No" />
+	        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Analytics testing in bau--> 
+<script type="text/javascript">
+    //<![CDATA[ 
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]>
+</script> 
+<script type="text/javascript">
+    //<![CDATA[
+    try {
+        var pageTracker = _gat._getTracker("UA-9510975-1");
+        pageTracker._trackPageview();
+    }
+    catch (err) { }
+    //]]>
+</script> 
+ 	
+	    </div>
+	</noscript>
+	
+	
+	    <!-- COI container tag - Action tracker --> 
+<script type="text/javascript">
+//<![CDATA[
+// call function with a javascript dictionary as an argument
+// i.e. coi_container_track({paramA:'valueA',paramB:'valueB'});
+function coi_container_track(coi_extended_data){
+	//Build the container url
+	coi_url  = (location.protocol == 'https:') ? 'https:' : 'http:';
+	coi_url += '//b3-uk.mookie1.com/2/';
+	coi_url += 'COI/'+location.hostname.toLowerCase();
+	coi_url = coi_url.replace('www.','')
+	try{coi_url += location.pathname.toLowerCase();}catch(e){coi_url += '/error_caught_in_page_name'}
+	if(coi_url.slice(-1)!='/'){coi_url+='/';}
+	coi_url += 'COI/1'+Math.floor(Math.random()*1000000000)+'@x96?';
+	//Add extended data passed to function
+	try{for(name in coi_extended_data){
+		coi_url += '&_RM_HTML_'+escape(name)+'_='+escape(coi_extended_data[name]);
+	}}catch(e){}
+ 	//find the existing iframe, otherwise create
+	var coi_container_iframe=document.getElementById('coi_container_tag_action');
+	if(coi_container_iframe==null){
+		coi_container_iframe=document.createElement('iframe');
+		coi_container_iframe.width="1";
+		coi_container_iframe.height="1";
+		coi_container_iframe.frameBorder="0";
+		coi_container_iframe.setAttribute('display','none');
+		coi_container_iframe.setAttribute('id','coi_container_tag_action');
+		document.body.appendChild(coi_container_iframe);
+	}
+	coi_container_iframe.src = coi_url;
+}
+//]]>
+</script>
+<!-- /COI container tag --> 
+	
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+    </script>
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        try {
+            var pageTracker = _gat._getTracker("UA-7188948-1");
+            pageTracker._trackPageview();
+        } catch (err) { }
+        //]]>
+    </script>
+    
+    <script type="text/javascript">
+        //<![CDATA[
+            try{
+	            coi_tag  = '<scr'+'ipt src="';
+	            coi_tag += (location.protocol == 'https:') ? 'https:' : 'http:';
+	            coi_tag += '//b3-uk.mookie1.com/3/';
+	            coi_tag += 'COI/'+location.hostname.toLowerCase();
+	            coi_tag = coi_tag.replace('www.','');
+	            try{coi_tag += location.pathname.toLowerCase().replace(/[^a-z0-9/\-_.]/g,'');}catch(e){coi_tag += 'error_caught_in_page_name';}
+	            if(coi_tag.slice(-1)!='/'){coi_tag+='/';}
+	            coi_tag += 'COI/1'+Math.floor(Math.random()*1000000000);
+	            coi_tag += '@x96?';
+	            try{
+		            for(name in coi_extended_data){
+			            coi_tag += '&_RM_HTML_'+escape(name)+'_='+escape(coi_extended_data[name]);
+		            }
+	            }catch(e){};
+	            coi_tag += '" type="text/javascript"></scri'+'pt>';
+	            document.write(coi_tag);
+            }catch(e){}
+        //]]>
+    </script>
+
+    
+</body>
+</html><!-- Rendered using cache profile:C4L Cache Profile at: 2013-12-13T15:36:59 -->
