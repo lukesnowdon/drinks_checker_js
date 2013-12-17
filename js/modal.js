@@ -1,7 +1,7 @@
-function modal(vc){
+function modal(vc,target){
 	var self = this;
 	self.__vc = vc
-	var $body = $("body")
+	var $target = target
 	var $bg = null
 	var $bs = null
 	var $bmi_wrapper = $('#bmi_wrapper')
@@ -14,7 +14,7 @@ function modal(vc){
 			var output = '<div id="modal_bg"></div><div id = "modal_container"><div id = "modal_close"><a href="javascript:;">close<img src = "images/close.png" border="0"></a></div><h1>'+data.title+'</h1><p>'+data.body+'</p></div>'
 		}
 		
-		$body.append(output)
+		$target.append(output)
 		$bg = $('#modal_bg')
 		$content = $('#modal_container')
 		if(self.__data.w){

@@ -9,7 +9,7 @@ function maintain_state(vc){
 		}
 	}
 	this.clearState = function (){
-		//$.removeCookie("c4l_drinks_checker");
+		$.removeCookie("c4l_drinks_checker");
 		init = true
 	}
 	this.restoreState = function(){

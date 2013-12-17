@@ -43,11 +43,12 @@ function view_controller(){
 	var $pages = new Array()
 	var slidelock = false;
 	var email = ''
+	this.__outer = $('#antbits_dc')
 	
 	this.__form_hidden = true
 	
 	this.__analytics_obj = new analyticsObj(this)
-	this.__modal = new modal(this);
+	this.__modal = new modal(this,self.__outer);
 	this.__drink_form = {}
 	this.__edit_panel = new editPanel(this);
 	this.__state_obj = new maintain_state(this);

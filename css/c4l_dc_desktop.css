@@ -12,7 +12,7 @@
 	position:relative;
 }
 
-.inner_block{
+#antbits_dc .inner_block{
 	background-image:url(../images/inner_block_bg.png);
 	background-repeat:repeat-y;
 	text-align:left;
@@ -21,30 +21,30 @@
 	position:absolute;
 	top:54px;
 }
-.inner_block>img{
+#antbits_dc .inner_block>img{
 	background-color:#fdf132;
 }
-.inner_block>div{
+#antbits_dc .inner_block>div{
 	padding:12px 20px 0px 20px;
 	line-height:26px;
 }
-.inner_block>h1{
+#antbits_dc .inner_block>h1{
 	font-size:30px;
 	color:#FF0000;
 	text-align:center;
 	width:100%;
 }
-#dt_p_0 .inner_block{
+#antbits_dc #dt_p_0 .inner_block{
 	top:210px;
 }
-#dt_p_0>img{
+#antbits_dc #dt_p_0>img{
 	margin-bottom:30px;
 }
-#dt_start>img{
+#antbits_dc #dt_start>img{
 	margin-bottom:-20px;
 	padding-left:10px;
 }
-#splash_footer{
+#antbits_dc #splash_footer{
 	position:absolute;
 	bottom:14px;
 	font-size:13px;
@@ -52,57 +52,57 @@
 	text-align:center;
 	width:100%;
 }
-#dt_p_1>.inner_block>div{
+#antbits_dc #dt_p_1>.inner_block>div{
 	padding-top:5px;
 	padding-bottom:10px;
 }
-#dt_p_2>.inner_block>div{
+#antbits_dc #dt_p_2>.inner_block>div{
 	height:354px;
 }
-#dt_p_4>.inner_block>div{
+#antbits_dc #dt_p_4>.inner_block>div{
 	height:400px;
 }
 
-#dt_p_5>.inner_block>div{
+#antbits_dc #dt_p_5>.inner_block>div{
 	height:400px;
 }
 
-#dt_p_6>.inner_block>div{
+#antbits_dc #dt_p_6>.inner_block>div{
 	height:400px;
 }
-#dt_p_7 .result_inner{
-	height:400px;
-	
-}
-#dt_p_8 .result_inner{
+#antbits_dc #dt_p_7 .result_inner{
 	height:400px;
 	
 }
-#choose_nav{
+#antbits_dc #dt_p_8 .result_inner{
+	height:400px;
+	
+}
+#antbits_dc #choose_nav{
 	position:absolute;
 	top:439px;
 	left:14px;
 	width:508px;
 	text-align:left;
 }
-#choose_nav>div{
+#antbits_dc #choose_nav>div{
 	position:absolute;
 	right:0px;
 	top:10px;
 }
-#input_0{
+#antbits_dc #input_0{
 	position:absolute;
 	top:12px;
 	left:22px;
 	width:184px;
 }
-#input_0>div{
+#antbits_dc #input_0>div{
 	font-size:32px;
 	text-align:center;
 	height:60px;
 	padding-top:20px;
 }
-#input_1{
+#antbits_dc #input_1{
 	position:absolute;
 	top:17px;
 	right:24px;
@@ -113,7 +113,7 @@
 	border-radius:10px;
 	line-height:22px;
 }
-#input_2{
+#antbits_dc #input_2{
 	position:absolute;
 	color:#fff;
 	font-size:32px;
@@ -129,32 +129,32 @@
 	background-position:center center;
 	text-align:center;
 }
-#input_1>h2{
+#antbits_dc #input_1>h2{
 	font-size:18px;
 	margin:4px 0px -3px 10px;
 	padding:0px;
 }
-#input_nav{
+#antbits_dc #input_nav{
 	position:absolute;
 	bottom:-44px;
 	
 	left:4px;
 	width:514px;
 }
-#input_nav>div{
+#antbits_dc #input_nav>div{
 	position:absolute;
 	right:0px;
 	top:0px;
 	
 }
-.quantity{
+#antbits_dc .quantity{
 	margin:5px 0px 0px 10px;
 	position:relative;
 }
-.quantity>a{
+#antbits_dc .quantity>a{
 	margin:0px 10px 0px 0px;
 }
-.quantity>div{
+#antbits_dc .quantity>div{
 	position:absolute;
 	top:4px;
 	left:80px;
@@ -167,7 +167,7 @@
 	margin-top:-6px;
 	text-align:center;
 }
-.starburst{
+#antbits_dc .starburst{
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -176,22 +176,22 @@
 	background-image:url(../images/starburst.png);
 	background-repeat:no-repeat;
 }
-.starburst a{
+#antbits_dc .starburst a{
 	text-decoration:none;
 	color:#FFF;
 }
-.starburst>a>div{
+#antbits_dc .starburst>a>div{
 	text-align:center;
 	font-size:19px;
 	width:115px;
 }
-.stb_u{
+#antbits_dc .stb_u{
 	padding-bottom:40px;
 }
-.stb_q{
+#antbits_dc .stb_q{
 	padding-top:40px;
 }
-#edit_outer{
+#antbits_dc #edit_outer{
 	position:absolute;
 	left:8px;
 	top:54px;
@@ -200,7 +200,7 @@
 	overflow:hidden;
 	display:none;
 }
-#edit_inner{
+#antbits_dc #edit_inner{
 	margin-top:380px;
 	background-image:url(../images/inner_block_bg.png);
 	background-repeat:repeat-y;
@@ -210,17 +210,17 @@
 	text-align:left;
 	position:relative;
 }
-#edit_inner>img{
+#antbits_dc #edit_inner>img{
 	margin-left:-4px;
 	background-color:#fdf132;
 }
-#edit_inner>h1{
+#antbits_dc #edit_inner>h1{
 	padding:0px;
 	margin:5px 0px 0px 15px;
 	font-size:30px;
 	color:#EB008B;
 }
-#edit_inner>div{
+#antbits_dc #edit_inner>div{
 	margin:10px;
 	width:492px;
 	height:316px;
@@ -229,21 +229,21 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-#edit_close{
+#antbits_dc #edit_close{
 	position:absolute;
 	right:-6px;
 	top:36px;
 	display:none;
 }
-#edit_close>a>span{
+#antbits_dc #edit_close>a>span{
 	color:#000;
 	font-size:16px;
 	margin-right:4px
 }
-#edit_close>a>img{
+#antbits_dc #edit_close>a>img{
 	margin-bottom:-5px
 }
-.edit_row{
+#antbits_dc .edit_row{
 	padding:10px;
 	font-size:18px;
 	border-top:1px solid #CCC; 
@@ -251,13 +251,13 @@
 	margin:0px 5px -1px 0px;
 	vertical-align:top;
 }
-.edit_row select{
+#antbits_dc .edit_row select{
 	border:2px solid #000;
 	border-radius:5px;
 	padding:3px;
 	margin-left:4px;
 }
-.edit_row input{
+#antbits_dc .edit_row input{
 	/*border:2px solid #000;*/
 	border:none;
 	border-radius:5px;
@@ -266,46 +266,46 @@
 	color:#FFF;
 	background-color:#FF0000;
 }
-.edit_row input:hover{
+#antbits_dc .edit_row input:hover{
 	background-color:#d20000;
 }
-.result_inner{
+#antbits_dc .result_inner{
 	text-align:center;
 	height:296px;
 }
-#result_back{
+#antbits_dc #result_back{
 	position:absolute;
 	top:96px;
 	left:10px;
 	display:none;
 }
-#result_next{
+#antbits_dc #result_next{
 	position:absolute;
 	top:488px;
 	right:22px;
 	display:none;
 }
-.result_body_text{
+#antbits_dc .result_body_text{
 	font-size:26px;
 	text-align:center;
 	margin:20px;
 	line-height:1.2em;
 }
-.result_body_text ul{
+#antbits_dc .result_body_text ul{
     padding-left:20px;
 	margin:0px;
 }
-.result_body_text li{
+#antbits_dc .result_body_text li{
     padding-bottom:0.4em;
 }
-.result_body_text span{
+#antbits_dc .result_body_text span{
 	color:#FF0000;
 }
-#units_head{
+#antbits_dc #units_head{
 	font-size:42px;
 	margin-top:40px;
 }
-#units_mid{
+#antbits_dc #units_mid{
 	
 	
 	width:230px;
@@ -316,7 +316,7 @@
 	
 }
 
-.numeral_wrap{
+#antbits_dc .numeral_wrap{
 	font-size:92px;
 	line-height:92px;
 	color:#F00;
@@ -328,23 +328,23 @@
 	
 	
 }
-.numeral{
+#antbits_dc .numeral{
 	position:absolute;
 	top:0px;
 	text-align:left;
 }
-.numeral_prefix{
+#antbits_dc .numeral_prefix{
 	position:absolute;
 	top:5px;
 	text-align:left;
 }
-.numeral_overlay{
+#antbits_dc .numeral_overlay{
 	height:92px;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
-#units_illo_left{
+#antbits_dc #units_illo_left{
 	position:absolute;
 	left:8px;
 	top:150px;
@@ -352,10 +352,10 @@
 	height:133px;
 	overflow:hidden;
 }
-#units_illo_left>img{
+#antbits_dc #units_illo_left>img{
 	margin-left:-150px
 }
-#units_illo_right{
+#antbits_dc #units_illo_right{
 	position:absolute;
 	right:10px;
 	top:150px;
@@ -363,10 +363,10 @@
 	height:133px;
 	overflow:hidden;
 }
-#units_illo_right>img{
+#antbits_dc #units_illo_right>img{
 	margin-right:-150px
 }
-#units_text{
+#antbits_dc #units_text{
 	position:absolute;
 	left:0px;
 	top:230px;
@@ -375,7 +375,7 @@
 	text-align:center;
 	display:none;
 }
-#units_caption{
+#antbits_dc #units_caption{
 	position:absolute;
 	left:70px;
 	top:300px;
@@ -384,19 +384,19 @@
 	text-align:center;
 	display:none;
 }
-#calories_head{
+#antbits_dc #calories_head{
 	font-size:36px;
 	line-height:42px;
 	
 }
-#calories_mid{
+#antbits_dc #calories_mid{
 	width:230px;
 	height:90px;
 	position:absolute;
 	left:145px;
 	top:115px;	
 }
-#calories_caption{
+#antbits_dc #calories_caption{
 	width:230px;
 	height:90px;
 	position:absolute;
@@ -404,14 +404,14 @@
 	top:210px;	
 	font-size:40px;
 }
-#calories_foot{
+#antbits_dc #calories_foot{
 	width:480px;
 	position:absolute;
 	left:0px;
 	top:260px;
 	font-size:24px;
 }
-#pie_chart{
+#antbits_dc #pie_chart{
 	position:absolute;
 	top:144px;
 	left:30px;
@@ -420,30 +420,30 @@
 	background-position:6px 6px;
 	
 }
-#pie_chart img{
+#antbits_dc #pie_chart img{
 	margin:-1px;
 	
 }
-#cost_head{
+#antbits_dc #cost_head{
 	font-size:36px;
 	line-height:42px;
 	
 }
-#cost_mid{
+#antbits_dc #cost_mid{
 	width:360px;
 	height:90px;
 	position:absolute;
 	left:60px;
 	top:115px;	
 }
-#cost_foot{
+#antbits_dc #cost_foot{
 	width:480px;
 	position:absolute;
 	left:0px;
 	top:260px;
 	font-size:32px;
 }
-#cost_illo_left{
+#antbits_dc #cost_illo_left{
 	position:absolute;
 	left:0px;
 	top:150px;
@@ -451,10 +451,10 @@
 	height:133px;
 	overflow:hidden;
 }
-#cost_illo_left>img{
+#antbits_dc #cost_illo_left>img{
 	margin-left:-150px
 }
-#cost_illo_right{
+#antbits_dc #cost_illo_right{
 	position:absolute;
 	right:0px;
 	top:150px;
@@ -462,10 +462,10 @@
 	height:133px;
 	overflow:hidden;
 }
-#cost_illo_right>img{
+#antbits_dc #cost_illo_right>img{
 	margin-right:-150px
 }
-#warning{
+#antbits_dc #warning{
 	background-color:#FFF;
 	text-align:center;
 	font-size:36px;
@@ -482,31 +482,31 @@
 	background-position:450px 15px;
 	display:none;
 }
-#means_body{
+#antbits_dc #means_body{
 	margin:70px 5px 5px 5px;
 	text-align:left;
 	font-size:19px;
 	line-height:1.2em;
 }
-#means_footer{
+#antbits_dc #means_footer{
 	position:absolute;
 	bottom:4px;
 	width:484px;
 	color:#F00;
 	font-size:18px;
 }
-#do_body{
+#antbits_dc #do_body{
 	margin:5px 5px 5px 5px;
 	text-align:left;
 	font-size:19px;
 	line-height:1.1em;
 }
-#do_footer{
+#antbits_dc #do_footer{
 	position:absolute;
 	bottom:10px;
 	width:484px;
 }
-#do_footer div{
+#antbits_dc #do_footer div{
 	margin:10px;
 }
 .left_col{
@@ -515,6 +515,6 @@
 .right_col{
 	float:right;
 }
-#do_body span{
+#antbits_dc #do_body span{
 	color:#15802F;
 }
