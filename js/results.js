@@ -326,7 +326,7 @@ function results(vc){
 		
 		var img =$(target.selector+'>img')
 		var img_src = img.attr('src')
-		target.on('click',function(){
+		target.bind('click',function(){
 			if(self.__gender == null){
 				self.setGender(key)
 			}else{
@@ -334,22 +334,22 @@ function results(vc){
 			}
 			self.__vc.__state_obj.storeState();
 		})
-		target.on('mouseover',function(){
+		target.bind('mouseover',function(){
 			if(self.__gender != key){
 				img.attr('src',img_src.replace('.png','_ovr.png'))
 			}
 		})
-		target.on('focus',function(){
+		target.bind('focus',function(){
 			if(self.__gender != key){
 				img.attr('src',img_src.replace('.png','_ovr.png'))	
 			}
 		})
-		target.on('focusout',function(){
+		target.bind('focusout',function(){
 			if(self.__gender != key){
 				img.attr('src',img_src)
 			}
 		})
-		target.on('mouseout',function(){
+		target.bind('mouseout',function(){
 			if(self.__gender != key){
 				img.attr('src',img_src)
 			}

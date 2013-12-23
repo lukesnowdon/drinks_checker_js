@@ -16,7 +16,7 @@ function maintain_state(vc){
 		var result = false;
 		if($.cookie("c4l_drinks_checker") != null){
 			var tmp = jQuery.parseJSON($.cookie("c4l_drinks_checker"))
-			console.log(tmp)
+			//console.log(tmp)
 			self.__vc.restoreState(tmp)
 			
 		}

@@ -83,14 +83,18 @@ function view_controller(){
 		$mob_launch.click(function(e){$mob_launch.css("visibility","hidden");return false;})
 		$mob_cancel.click(function(e){$mob_launch.css("visibility","hidden");return false;})
 	}
-	if(self.__variant != 'phone'){
-		loadjscssfile('css/c4l_dc_desktop.css','css')
-	}else{
-		loadjscssfile('css/c4l_dc_phone.css','css')
+	switch(self.__variant){
+		case 'desktop':
+			loadjscssfile('css/c4l_dc_desktop.css','css')
+		break;
+		case 'phone':
+			loadjscssfile('css/c4l_dc_phone.css','css')
+		break;
+		case 'tablet':
+			loadjscssfile('css/c4l_dc_desktop.css','css')
+			loadjscssfile('css/c4l_dc_tablet.css','css')
+		break;
 	}
-	
-	
-	
 	this.resizeLayout = function(){
 		page_height = 0
 		switch(self.__variant){
@@ -130,6 +134,7 @@ function view_controller(){
 				autoOver($start_again)
 				$splash.html(self.__data.misc_text.splash)
 				$inner.width(self.__max_pages*self.__width)
+				
 				this.__drink_form = new drinkForm(self,'desktop')
 				for(var i=0;i<self.__starbursts.length;i++){
 					self.__starbursts[i][0].css('left',self.__starbursts[i][1]).css('top',self.__starbursts[i][2]).hide()
@@ -159,6 +164,7 @@ function view_controller(){
 				$splash.html(self.__data.misc_text.splash)
 				$inner.width(self.__max_pages*self.__width)
 				this.__drink_form = new drinkForm(self,'tablet')
+				
 				for(var i=0;i<self.__starbursts.length;i++){
 					self.__starbursts[i][0].css('left',self.__starbursts[i][1]).css('top',self.__starbursts[i][2]).hide()
 					self.__starbursts[i][0].click(function(){self.addDrink(this)}).mouseover(function(){
@@ -179,29 +185,28 @@ function view_controller(){
 					$pages[i].css('left',i*530)
 					
 				}
+				
 			break;
 			case 'phone':
 				
 			break;
 		}
 		
-		$start.on('click',function(){self.slideNext()})
-		$start_again.on('click',function(){self.startAgain()})
-		$edit.on('click',function(){self.editDrinks()})
-		$next.on('click',function(){self.slideNext()})
-		$email.on('click',function(){self.email()})
-		$back.on('click',function(){
+		$start.bind('click',function(){self.slideNext()})
+		$start_again.bind('click',function(){self.startAgain()})
+		$edit.bind('click',function(){self.editDrinks()})
+		$next.bind('click',function(){self.slideNext()})
+		$email.bind('click',function(){self.email()})
+		$back.bind('click',function(){
 			self.slidePrev()
 			if(self.__page <2){
 				$('#'+this.parentNode.id).fadeOut();
 			}
 		})
-		$check_now.on('click',function(){
+		$check_now.bind('click',function(){
 			self.hideForm(true)
 			self.slideNext()
 		})
-		
-		//console.log($pages)
 		for(i=0;i<5;i++){
 			var d = $('#drink_'+i)
 			autoOver(d)
@@ -215,6 +220,7 @@ function view_controller(){
 		self.manageTabbing(1)
 		self.__results.init()
 		self.__state_obj.restoreState();
+		
 	}
 	this.startAgain = function(){
 		self.__drinks = new Array()
@@ -229,7 +235,7 @@ function view_controller(){
 		var data = {'title':'Email your results','body':body_str}
 		self.__modal.launch(data)
 		var $send = $('#send')
-		$send.on('click',function(){
+		$send.bind('click',function(){
 			email = $('#email_input').val()
 			if(validateEmail(email)){
 				$('#send>img').attr('src','images/sending.gif')
@@ -291,6 +297,7 @@ function view_controller(){
 				window.scrollTo(0, 1);
 			}
 		}
+		
 	}
 	this.slidePrev = function(){
 		if(self.__page>0  && !slidelock){

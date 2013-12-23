@@ -201,8 +201,10 @@
 	background-image:url(../images/picker_h_marker.png);
 	background-position:center top;
 	background-repeat:no-repeat;
-	background-size: 15px 8px;
+	background-size: 15px 11px;
 	background-color:#FFFFFF;
+	
+	border:2px #000 solid;
 }
 #antbits_dc .picker_overlay_r{
 	position:absolute;
@@ -261,7 +263,7 @@
 }
 #antbits_dc .picker_emphasis{
 	background-image:url(../images/picker.emphasis.png);
-	background-size:50px 25px;
+	background-size:50px 16px;
 	background-position:bottom center;
 	background-repeat:no-repeat;
 	

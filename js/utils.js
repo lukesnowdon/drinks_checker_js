@@ -22,16 +22,16 @@ var isMobile = {
 var autoOver = function(target){
 	var img =$(target.selector+'>img')
 	var img_src = img.attr('src')
-	target.on('mouseover',function(){
+	target.bind('mouseover',function(){
 		img.attr('src',img_src.replace('.png','_ovr.png'))
 	})
-	target.on('focus',function(){
+	target.bind('focus',function(){
 		img.attr('src',img_src.replace('.png','_ovr.png'))	
 	})
-	target.on('focusout',function(){
+	target.bind('focusout',function(){
 		img.attr('src',img_src)
 	})
-	target.on('mouseout',function(){
+	target.bind('mouseout',function(){
 		img.attr('src',img_src)
 	})
 }

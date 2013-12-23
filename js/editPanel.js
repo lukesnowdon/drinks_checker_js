@@ -91,9 +91,9 @@ function editPanel(vc){
 		
 		$scroll_pane.html(output)
 		for(var i = 0;i<drinks.length;i++){
-			$('#edit_quantity_'+i).on('change',function(){self.editDrinkData(this)})
-			$('#edit_price_'+i).on('change',function(){self.editDrinkData(this)})
-			$('#edit_delete_'+i).on('click',function(){self.editDrinkData(this)})
+			$('#edit_quantity_'+i).bind('change',function(){self.editDrinkData(this)})
+			$('#edit_price_'+i).bind('change',function(){self.editDrinkData(this)})
+			$('#edit_delete_'+i).bind('click',function(){self.editDrinkData(this)})
 		}
 	}
 }
